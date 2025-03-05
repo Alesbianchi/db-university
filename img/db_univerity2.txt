@@ -1,0 +1,11 @@
+1 CONTARE QUANTI ISCRITTI CI SONO STATI OGNI ANNO
+SELECT YEAR(enrolment_date), COUNT(id) AS data_iscrizione
+FROM students
+GROUP BY enrolment_date;
+
+2 CONTARE GLI INSEGNANTI CHE HANNO L'UFFICIO NELLO STESSO EDIFICIO
+
+SELECT office_number, COUNT(id) AS same_office
+FROM teachers
+GROUP BY office_number;
+
