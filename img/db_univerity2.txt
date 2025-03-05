@@ -9,3 +9,9 @@ SELECT office_number, COUNT(id) AS same_office
 FROM teachers
 GROUP BY office_number;
 
+3. CALCOLARE LA MEDIA DEI VOTI DI OGNI APPELLO D'ESAME
+SELECT AVG(vote) AS media_voti, exam_id
+FROM exam_student
+GROUP BY exam_id;
+
+4. CONTARE QUANTI CORSI DI LAUREA CI SONO PER OGNI DIPARTIMENTO 
