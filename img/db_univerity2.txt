@@ -15,3 +15,6 @@ FROM exam_student
 GROUP BY exam_id;
 
 4. CONTARE QUANTI CORSI DI LAUREA CI SONO PER OGNI DIPARTIMENTO 
+SELECT department_id, COUNT(id) AS total_courses
+FROM degrees
+GROUP BY department_id;
